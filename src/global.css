@@ -52,6 +52,12 @@ button {
   cursor: pointer;
 }
 
+button:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+  filter: grayscale(1);
+}
+
 textarea:hover,
 input:hover,
 button:hover {

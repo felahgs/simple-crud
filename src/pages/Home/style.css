@@ -1,16 +1,15 @@
-main {
+.home__main-container {
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* padding: 5rem; */
 }
 
-h1 {
+.home__container h1 {
   align-self: flex-start;
 }
 
-.table-container {
+.home__table-container {
   padding: 2rem;
 }

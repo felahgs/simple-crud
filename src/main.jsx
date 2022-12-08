@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 
 import Home from "./pages/Home";
 import CreateUser from "./pages/CreateUser";
-import ErrorPage from "./error-page";
+import ErrorPage from "./pages/Error";
 
 import {
   createBrowserRouter,
