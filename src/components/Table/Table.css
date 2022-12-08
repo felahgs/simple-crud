@@ -1,0 +1,28 @@
+table {
+  /* border: 1px solid blue; */
+  text-align: start;
+  padding: 1rem;
+  border-collapse: collapse;
+  font-weight: 400;
+}
+
+tr,
+td {
+  padding-right: 3rem;
+}
+
+td {
+  padding: 1.5rem 4rem 1.5rem 0;
+}
+
+tr {
+  border-top: 1px solid #ccc;
+}
+
+.table__action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 0rem 1.5rem 0;
+}

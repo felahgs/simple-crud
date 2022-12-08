@@ -1,0 +1,12 @@
+{
+    "users": [
+        {"id": 1, "name": "Jane Smith", "email": "jane@example.com", "phone": "202-555-0193" },
+        {"id": 2, "name": "Tristan Rodrigues", "email": "tristan@mail.com", "phone": "202-555-0183" },
+        {"id": 3, "name": "Andrea Jones", "email": "andrea@mail.com", "phone": "202-555-0138" },
+        {"id": 4, "name": "Jane Smith", "email": "jane@example.com", "phone": "202-555-0193" },
+        {"id": 5, "name": "Jane Smith", "email": "jane@example.com", "phone": "202-555-0193" },
+        {"id": 6, "name": "Tristan Rodrigues", "email": "tristan@mail.com", "phone": "202-555-0183" },
+        {"id": 7, "name": "Andrea Jones", "email": "andrea@mail.com", "phone": "202-555-0138" },
+        {"id": 8, "name": "Jane Smith", "email": "jane@example.com", "phone": "202-555-0193" }
+    ]
+}
