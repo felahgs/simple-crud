@@ -4,11 +4,15 @@ import { useNavigate } from "react-router-dom";
 import Table from "../../components/Table";
 import { api } from "../../services/api";
 
+// This imports our style. In this project we are not using any css library or scouped strategy.
+// That is not a good idea, it is better to have our styles isolated so they won't be applied on the whole application.
 import  "./style.css";
 
 function Home() {
   // State where we are going to save users fetched from the server
   const [users, setUsers] = useState([]);
+  // useNavigate is a hook from the react-router-dom library. With that, we can easily navigate to any path that we 
+  // declared under our router paths on the main.jsx file.
   const navigate = useNavigate();
 
   async function fetchUsers() {
@@ -21,8 +25,8 @@ function Home() {
   }
 
   // Use Effect is triggered when te component is renered
+  // the fetchUsers() method Calls the get users function to update de list of users.
   useEffect(() => {
-    // Call the get users function to update de list of users.
     fetchUsers();
   }, []);
 
@@ -41,19 +45,15 @@ function Home() {
     console.log("editing", users.find(user => user.id === id).name);
   };
 
-  // const mockedUsers = [
-  //   {id: 1, name: "Jane Smith", email: "jane@example.com", phone: "202-555-0193" },
-  //   {id: 2, name: "Tristan Rodrigues Ramones Ramos Barbosa", email: "tristan@mail.com", phone: "202-555-0183" },
-  //   {id: 3, name: "Andrea Jones", email: "andrea@mail.com", phone: "202-555-0138" },
-  //   {id: 4, name: "Jane Smith", email: "jane@example.com", phone: "202-555-0193" },
-  // ];
-
   return (
     <main className="home__main-container">
       <div className="table-container">
         <h1>Lista de Contatos</h1>
         {/* <Table content={mockedUsers} /> */}
+        {/* Here we render our Table component passing our data from the back-end as a props */}
         <Table content={[...users]}  onEdit={handleEdit} onDelete={handleDelete} />
+
+        {/* here onClick will be calling the navigate() method to the "/create" path that renders the CreateUser component */}
         <button onClick={() => navigate("/create")}>
           Novo Contato
         </button>
